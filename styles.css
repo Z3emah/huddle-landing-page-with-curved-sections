@@ -80,7 +80,7 @@ nav{
     box-shadow: 3px 7px 10px -6px var(--clr-gray);
 }
 .header-btn:hover,
-.email-box label:hover{
+.email-box a:hover{
     opacity: 0.7;
     transition: all 0.2s ease-in-out;
 }
@@ -238,8 +238,10 @@ footer::before{
     place-items: center;
     gap: 1rem;
 }
-.email-box label{
+.email-box a{
     background-color: var(--clr-pink);
+    text-decoration: none;
+    color: var(--clr-white);
     padding: 0.8rem;
     display: block;
     place-self: end;
@@ -248,10 +250,9 @@ footer::before{
     font-weight: 600;
     width: 40%;
     text-align: center;
-    cursor: pointer;
 }
 .email-box input{
-   width: 100%;
+    width: 100%;
     padding: 1rem;
     border-radius: 0.6rem;
 }
